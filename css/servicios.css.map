@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,uEAAI;AAIZ,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,wBAAwB;EACrC,UAAU,EAAE,MAAM;CACrB;;AAGD,uDAAuD;AAEvD,AAAA,KAAK,CAAC,CAAC;AACP,MAAM,CAAC;EACH,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;CAEnB;;AAED,AAAA,KAAK,CAAC,CAAC,CAAC;EACJ,KAAK,EAAE,OAAO;CAEjB",
+    "sources": [
+        "../scss/servicios.scss"
+    ],
+    "names": [],
+    "file": "servicios.css"
+}

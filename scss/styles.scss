@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$success: #198754;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/*===================HEADER==========================*/
+
+#menu a,
+button {
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+#menu a {
+    color: #3f3f3f;
+
+}
+
+/*===================CARRUSEL IMG==========================*/
+
+.div_carrusel__mh {
+    max-height: 95vh;
+}
+
+.slide {
+    margin-top: 10px;
+
+    img {
+        height: 95vh;
+    }
+}
+
+.width_div__carrusel {
+    margin: auto;
+    height: 95vh;
+}
+
+
+
+
+/*===================INTRODUCCION==========================*/
+
+
+/*===================== TODO ES UN PROCESO =====================================*/
+
+/*condicional-1*/
+$koderjauz: dani;
+
+.div_proceso__padding {
+    @if ($koderjauz==dani) {
+        padding: 30px 30px;
+        padding-bottom: 150px;
+    }
+
+    @else if ($koderjauz==marco) {
+        padding: 50px 70px;
+        padding-bottom: 400/3px;
+    }
+
+    @else {
+        box-shadow: 3px black;
+    }
+}
+
+/* Aquí puedes escribir tu comentario */
+
+
+
+
+
+/*condicional-1*/
+
+
+/*====================== EL EQUIPO ====================================*/
+
+/*condicional-2*/
+$anashei: si;
+
+.div_padding__bottom {
+    @if ($anashei==no) {
+        padding-bottom: (214vh * 2);
+    }
+
+    @else if ($anashei==si) {
+        padding-bottom: 10vh;
+    }
+
+    @else {
+        padding-bottom: 42px;
+    }
+}
+
+/*condiciona-2*/
+
+/*===================OPINIONES GENTE==========================*/
+
+#seccion__testimonios {
+    padding-bottom: 250px;
+    background: white;
+}
+
+/*mixin,extend y operaciones*/
+@mixin carac-divBloques () {
+    position: relative;
+    padding: (10px*3);
+    background: #fff;
+    border-top-right-radius: 35px;
+    margin-bottom: (50px/2);
+    transition: all .7s ease;
+}
+
+.carac-i {
+    font-size: (10px*3);
+    opacity: .09;
+    position: absolute;
+    right: (10px*4);
+    bottom: (5px*4);
+
+}
+
+.carac_div__bloques {
+    @include carac-divBloques();
+
+    i {
+        @extend .carac-i;
+    }
+}
+
+/*mixin, extend y operaciones*/
+.carac_div__bloques:hover {
+    box-shadow: 0 7px 22px rgba(0, 0, 0, 0.08);
+}
+
+
+.distancia_img__texto {
+    margin-bottom: 15px;
+
+    img {
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+        border: 1px dotted #ddd;
+        padding: 5px;
+    }
+}
+
+.distancia_img__nombres {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/*=========================CONTACTOS BACKROUND================================*/
+
+#bg__contactos {
+    position: relative;
+    top: -130px;
+}
+
+#seccion__contacto {
+    background-color: $success;
+    min-height: 500px;
+    position: relative;
+}
+
+/*=========================CONTACTOS FORMULARIO================================*/
+
+#contact_form__container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius: 5px;
+
+}
+
+/*condicional-3*/
+$color: negro;
+
+#titulo_contact__form {
+    @if ($color==azul) {
+        color: blue;
+    }
+
+    @else if ($color==negro) {
+        color: #3f3f3f;
+    }
+
+    @else {
+        color: lightgreen;
+    }
+}
+
+/*condicional-3*/
+
+
+/*=========================FOOTER================================*/
+
+footer {
+    background: $success;
+    min-height: 100px;
+
+    p {
+        color: #f3f3f3;
+        text-align: center;
+    }
+}
+
+
+
+#iconos i {
+    font-size: 26px;
+    padding: 0 8px;
+    color: #f3f3f3;
+}
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px) {
+
+    #intro,
+    #equipo {
+        width: 90%;
+        margin: auto;
+    }
+
+    #local {
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .wrapper-local {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+}
+
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+
+@media (max-width:768px) {
+
+    #intro,
+    #equipo {
+        width: 90%;
+        margin: auto;
+    }
+
+
+    #img-equipo {
+        max-height: 20rem;
+        width: 90%;
+    }
+
+    .wrapper-local {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    #local {
+        flex-wrap: wrap;
+    }
+
+    .mapa img {
+        width: 100%;
+        height: auto;
+    }
+
+    #bg-contactos {
+        top: -120px;
+    }
+
+
+}
+
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width: 100%;
+    }
+
+    #servicios-fila-1 {
+        width: 100%;
+    }
+
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}

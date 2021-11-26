@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+/*===================HEADER==========================*/
+#menu a,
+button {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#menu a {
+  color: #3f3f3f;
+}
+
+/*===================CARRUSEL IMG==========================*/
+.div_carrusel__mh {
+  max-height: 95vh;
+}
+
+.slide {
+  margin-top: 10px;
+}
+
+.slide img {
+  height: 95vh;
+}
+
+.width_div__carrusel {
+  margin: auto;
+  height: 95vh;
+}
+
+/*===================INTRODUCCION==========================*/
+/* NADA XD*/
+/*===================== TODO ES UN PROCESO =====================================*/
+/*condicional-1*/
+.div_proceso__padding {
+  padding: 30px 30px;
+  padding-bottom: 150px;
+}
+
+/*condicional-1*/
+/*====================== EL EQUIPO ====================================*/
+/*condicional-2*/
+.div_padding__bottom {
+  padding-bottom: 10vh;
+}
+
+/*condiciona-2*/
+/*===================OPINIONES GENTE==========================*/
+#seccion__testimonios {
+  padding-bottom: 250px;
+  background: white;
+}
+
+/*mixin,extend y operaciones*/
+.carac-i, .carac_div__bloques i {
+  font-size: 30px;
+  opacity: .09;
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+}
+
+.carac_div__bloques {
+  position: relative;
+  padding: 30px;
+  background: #fff;
+  border-top-right-radius: 35px;
+  margin-bottom: 25px;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+/*mixin, extend y operaciones*/
+.carac_div__bloques:hover {
+  -webkit-box-shadow: 0 7px 22px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 7px 22px rgba(0, 0, 0, 0.08);
+}
+
+.distancia_img__texto {
+  margin-bottom: 15px;
+}
+
+.distancia_img__texto img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  border: 1px dotted #ddd;
+  padding: 5px;
+}
+
+.distancia_img__nombres {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/*=========================CONTACTOS BACKROUND================================*/
+#bg__contactos {
+  position: relative;
+  top: -130px;
+}
+
+#seccion__contacto {
+  background-color: #198754;
+  min-height: 500px;
+  position: relative;
+}
+
+/*=========================CONTACTOS FORMULARIO================================*/
+#contact_form__container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #fbfafa;
+  border-radius: 5px;
+}
+
+/*condicional-3*/
+#titulo_contact__form {
+  color: #3f3f3f;
+}
+
+/*condicional-3*/
+/*=========================FOOTER================================*/
+footer {
+  background: #198754;
+  min-height: 100px;
+}
+
+footer p {
+  color: #f3f3f3;
+  text-align: center;
+}
+
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #f3f3f3;
+}
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+@media (max-width: 1200px) {
+  #intro,
+  #equipo {
+    width: 90%;
+    margin: auto;
+  }
+  #local {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 30px;
+  }
+  .wrapper-local {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+  }
+}
+
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+@media (max-width: 768px) {
+  #intro,
+  #equipo {
+    width: 90%;
+    margin: auto;
+  }
+  #img-equipo {
+    max-height: 20rem;
+    width: 90%;
+  }
+  .wrapper-local {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+  }
+  #local {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mapa img {
+    width: 100%;
+    height: auto;
+  }
+  #bg-contactos {
+    top: -120px;
+  }
+}
+
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+@media (max-width: 576px) {
+  #servicios-fila-2 {
+    width: 100%;
+  }
+  #servicios-fila-1 {
+    width: 100%;
+  }
+  .icono-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

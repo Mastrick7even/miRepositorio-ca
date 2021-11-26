@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hometraing es un gimnasio presencial-online en donde te ayudaremos a potenciar la mejor version fisica y mental de ti">
+  <meta name="keywords" content="gimnasio, entrenamientos, personalizados, clases grupales, fisicamente">
+
+  <!--========================================================= Bootstrap CSS ================================================-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>C.A Hometraining</title>
+</head>
+
+<body>
+  <!--======================================================== HEADER ========================================================-->
+
+  <header class="container-fluid bg-success d-flex justify-content-center">
+    <p class="text-light mb-0 p-2 fs-6">Queremos ser la mejor guia saludable en tu camino, ¿Cuando arrancamos?</p>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light p-3" id="menu">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="fs-5 text-success fw-bold">C.A Hometraining</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/sobrenosotros.html">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="pages/sucursales.html" id="navbarDarkDropdownMenuLink"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sucursales
+            </a>
+            <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="pages/sucursales.html">Santiago</a></li>
+              <li><a class="dropdown-item" href="pages/sucursales.html">Concepción</a></li>
+              <li><a class="dropdown-item" href="pages/sucursales.html">Viña del Mar</a></li>
+            </ul>
+          </li>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!--======================================================== CARRUSEL IMG========================================================-->
+
+
+  <div id="carouselExampleCaptions" class="carousel slide width_div__carrusel" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="div_carrusel__mh">
+      <div class="carousel-item active">
+        <img src="img/carrusel1.jpg" class="d-block w-100" alt="hombre-ejercitandose" title="Hombre Ejercitandose">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Junto a los mejores profesionales</h5>
+          <p>Nuestro staff está compuesto de expertos en salud y deportes.</p>
+          <a href="#" target="_blank" class="btn btn-success btn-circled">
+            ¡Quiero inscribirme!
+          </a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/carrusel2.jpg" class="d-block w-100" alt="mujer-posando" title="Mujer Posando">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Reconocidos por excelencia</h5>
+          <p>Hemos sido premiados numerosas veces por el servicio al cliente.</p>
+          <a href="#" target="_blank" class="btn btn-success btn-circled">
+            ¡Quiero inscribirme!
+          </a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/carrusel3.jpg" class="d-block w-100" alt="mujer-ejercitandose" title="Mujer Ejercitandose">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Obtienes lo que pagas</h5>
+          <p>Líderes del mercado entregando un producto de calidad a buen precio.</p>
+          <a href="#" target="_blank" class="btn btn-success btn-circled">
+            ¡Quiero inscribirme!
+          </a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+
+
+
+  <!--========================================================INTRODUCCION========================================================-->
+
+
+
+  <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto"
+    id="intro">
+    <h1 class="p-3 fs-2 border-top border-3">Un gimnasio único para cubrir todas tus necesidades <span
+        class="text-success">Musculares, Cardiovasculares y Nutritivas</span></h1>
+    <p class="p-3  fs-4">
+      <span class="text-success"> En Hometraining</span> todo comienza con un objetivo. <br> Si la motivacion se acaba,
+      queda la disciplina. <br>
+      Seremos tu mejor compañia. <br> Recuerda que:</p>
+  </section>
+
+
+  <!--========================================================TODO ES UN PROCESO========================================================-->
+
+  <section class="section bg-grey" id="process">
+    <div class="container div_proceso__padding">
+      <div class="row justify-content-center mb-2">
+        <div class="col-md-8 col-lg-6 text-center">
+          <div class="section-heading">
+
+            <h2 class="section-title ">
+              Todo es un proceso...
+            </h2>
+
+
+            <p>
+              Ya estas aqui. Es el primer paso para comenzar un gran camino.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-sm-6 col-md-6">
+          <div class="process-block">
+            <img src="img/adaptacion-1.jpg" alt="planta-adaptacion" title="Proceso de adapción" class="img-fluid">
+
+            <h3>Adaptacion</h3>
+            <p>Nadie dice que sera facil, manten siempre tus objetivos en mente.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-md-6">
+          <div class="process-block">
+            <img src="img/procesos-2.jpg" alt="planta-cambios" title="Proceso de cambios" class="img-fluid">
+
+            <h3>Cambios</h3>
+            <p>En esta etapa notaras avances, te motivaras y querras seguir adelante.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-md-6">
+          <div class="process-block">
+            <img src="img/cambios-3.jpg" alt="planta-transformacion" title="Proceso de transformación" class="img-fluid">
+
+            <h3>Transformacion</h3>
+            <p>Una vez llegues aqui, no tienes que abandonarte por nada. Recuerda porque has luchado tanto. <br> Vamos
+              campeon!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================================================================================================================== -->
+  <h2 class="mb-4 fs-2 text-center">Alguna de las actividades que puedes encontrar en
+    <span class="text-success">Hometraining.</span></h2>
+
+
+  <div class="card mb-3 d-grid gap-4 mx-auto" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="img/pesas.png" class="img-fluid rounded-start" alt="gimnasio-pesas" title="Pesas en gimnasio">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Halterofilia</h5>
+          <p class="card-text">Es un deporte que consiste en el levantamiento del máximo peso
+            posible en una barra en cuyos extremos se fijan varios discos, que son los que determinan el peso
+            final que se levanta.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3 d-grid gap-4 mx-auto" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="img/crossfit.jpg" class="img-fluid rounded-start" alt="gimnasio-crossfit">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Crossfit</h5>
+          <p class="card-text">Es un tipo de entrenamiento de ejercicios funcionales, constantemente variados,
+            ejecutados a alta intensidad. Es un programa de fuerza y acondicionamiento físico total.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3 d-grid gap-4 mx-auto" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="img/spining.jpg" class="img-fluid rounded-start" alt="gimnasio-spinning" title="Bicicletas para spinning">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Spinning</h5>
+          <p class="card-text">Spinning o ciclo indoor es un tipo de ejercitación que supone el trabajo
+            físico sobre una bicicleta fija especialmente diseñada. Las clases suelen ser grupales, intensas y
+            vibrantes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3 d-grid gap-4 mx-auto" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="img/zumba.jpg" class="img-fluid rounded-start" alt="gimnasio-zumba" title="Bailes Zumba">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Zumba</h5>
+          <p class="card-text">Se imparte en clases dirigidas en la que se realizan ejercicios aeróbicos
+            al ritmo de música latina. Pierdes peso de forma divertida y mejoras tu estado de ánimo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--======================================================== OPINIONES GENTE ========================================================-->
+
+  <section class="section pt-5 mt-5" id="seccion__testimonios">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-sm-12 col-md-12">
+          <div class="section-heading testimonial-heading">
+            <h2>¿Que dice la gente <br>sobre nosotros?</h2>
+            <p>Esta es una recopilacion de reseñas hechas por clientes que han tomado el plan premium.
+              Disfrutando todos los estandares de calidad que les hemos ofrecido en su permanencia. </p>
+          </div>
+        </div>
+        <div class="col-lg-8 col-sm-12 col-md-12">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="carac_div__bloques ">
+                <div class="distancia_img__texto d-flex">
+                  <img src="img/marco.png" alt="testimonio-marco" title="Marco Serlik" class="img-fluid">
+                  <div class="distancia_img__nombres">
+                    <h4>Marco Serlik</h4>
+                    <h6>Tutor en Coder House</h6>
+                  </div>
+                </div>
+
+                Llevo dos años entrenando en C.A hometraining durante mis vacaciones y estoy encantado.
+                Tienen todo lo que necesitas para entrenar(sin florituras innecesarias) y un montón de
+                clases colectivas.
+
+                <i class="fa fa-quote-right"></i>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="carac_div__bloques ">
+                <div class="distancia_img__texto d-flex">
+                  <img src="img/samuel.png" alt="testimonio-samuel" title="Samuel" class="img-fluid">
+                  <div class="distancia_img__nombres">
+                    <h4>Samuel Tocaimaza</h4>
+                    <h6>Tutor en Coder House</h6>
+                  </div>
+                </div>
+
+                Lo mejor de todo es el trato y el buen asesoramiento que te dan desde el primer minuto . Se
+                nota la experiencia de muchos años.
+
+                <i class="fa fa-quote-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="carac_div__bloques ">
+                <div class="distancia_img__texto d-flex">
+                  <img src="img/leo.png" alt="testimonio-leo" title="Leo Spinetto" class="img-fluid">
+                  <div class="distancia_img__nombres">
+                    <h4>Leo Spinetto</h4>
+                    <h6>Profe en Coder House</h6>
+                  </div>
+                </div>
+
+                Instalaciones de calidad y alta profesionalidad. Es todo un lujo poder contar con la
+                direccion y el consejo de dos profesionales como los que regentan este gym por un precio
+                al alcance de cualquier bolsillo.
+
+                <i class="fa fa-quote-right"></i>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="carac_div__bloques ">
+                <div class="distancia_img__texto d-flex">
+                  <img src="img/johanna.png" alt="testimonio-johanna" title="Johanna" class="img-fluid">
+                  <div class="distancia_img__nombres">
+                    <h4>Johanna Barros</h4>
+                    <h6>Tutora en Coder House</h6>
+                  </div>
+                </div>
+
+                Los mejores profesionales y las mejores instalaciones. Buena gente y ambiente
+                excepcional. Tratamiento personalizado y cercano, resolución de problemas al instante y
+                seguimiento de progresos.
+
+                <i class="fa fa-quote-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="carac_div__bloques">
+                <div class="distancia_img__texto d-flex">
+                  <img src="img/dani.png" alt="testimonio-dani" title="Dani" class="img-fluid">
+                  <div class="distancia_img__nombres">
+                    <h4>Daniel Boza García</h4>
+                    <h6>Estudiante en Coder House</h6>
+                  </div>
+                </div>
+
+                Es un gimnasio con instalaciones espectaculares, dirigido por dos profesionales
+                excelentes con un trato personalizado.
+
+                <i class="fa fa-quote-right"></i>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="carac_div__bloques">
+                <div class="distancia_img__texto d-flex">
+                  <img src="img/alejandro.png" alt="testimonio-alejandro" title="Alejandro" class="img-fluid">
+                  <div class="distancia_img__nombres">
+                    <h4>Alejandro Maure</h4>
+                    <h6>Tutor en coder house</h6>
+                  </div>
+                </div>
+
+                Este gimnasio lo tiene todo, están al día con las ultimas técnicas, tienen una variedad
+                de ejercicios extensas si quieres hacer solo musculación y clases muy variadas incluidas
+                clases para los niños.
+
+                <i class="fa fa-quote-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--======================================================== SECCION CONTACTOS========================================================-->
+
+
+  <section id="seccion__contacto" class="border-bottom border-secondary border-2">
+    <div id="bg__contactos">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#198754" fill-opacity="1"
+          d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+        </path>
+      </svg>
+    </div>
+
+
+    <!--======================================================== CONTENEDOR DEL FORMULARIO ========================================================-->
+
+
+    <div class="container  border-top border-success " style="max-width: 500px" id="contact_form__container">
+      <div class="text-center mb-4" id="titulo_contact__form">
+        <div><img src="./img/support.png" alt="soporte-ayuda" title="Mesa de soporte" class="img-fluid ps-5"></div>
+        <h2><a class="text-success" href="pages/contacto.html">Contactanos</a></h2>
+        <p class="fs-5">Nos encantaria hablar contigo para poder ayudarte.</p>
+      </div>
+
+
+
+      <form action="">
+        <div class="mb-3">
+          <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+        </div>
+
+
+        <div class="mb-3">
+          <input type="input" class="form-control" id="nombre" placeholder="Nombre completo">
+        </div>
+
+
+        <div class="mb-3">
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Teléfono">
+        </div>
+
+        <div class="mb-3">
+          <textarea class="form-control" id="msj" rows="4"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <button type="button" class="btn btn-success w-100 fs-5">Enviar Mensaje</button>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+
+
+  <!--========================================================FOOTER========================================================-->
+
+
+
+  <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+    <p class="fs-5 px-3  pt-3">C.A Hometraining &copy; Todos Los Derechos Reservados 2021</p>
+    <div id="iconos">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
